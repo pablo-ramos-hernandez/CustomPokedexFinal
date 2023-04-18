@@ -65,7 +65,7 @@ public class Pokemon {
     @Override
     public String toString() {
         return nombre + "\n" +
-                "\t" + tipo + "\n" +
+                tipo + "\n" +
                 " HT " + altura + "\n" +
                 " WT " + peso + "\n" + 
                 "------------------------------------------------" + "\n" +
