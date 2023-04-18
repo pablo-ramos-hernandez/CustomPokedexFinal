@@ -15,7 +15,7 @@ public class PokemonLegendario extends Pokemon {
     }
 
     public PokemonLegendario(String nombre, String tipo, int altura, int peso, String descripcion,
-            String localizacion) {
+        String localizacion) {
         super(nombre, tipo, altura, peso, descripcion);
         this.localizacion = localizacion;
     }
