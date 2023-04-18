@@ -64,11 +64,11 @@ public class Pokemon {
 
     @Override
     public String toString() {
-        return nombre + "/n" +
-                tipo + "/n" +
-                " HT " + altura + "/n" +
-                " WT " + peso +
-                "------------------------------------------------" + "/n" +
+        return nombre + "\n" +
+                "\t" + tipo + "\n" +
+                " HT " + altura + "\n" +
+                " WT " + peso + "\n" + 
+                "------------------------------------------------" + "\n" +
                 descripcion;
 
     }
