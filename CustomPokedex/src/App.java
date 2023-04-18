@@ -21,24 +21,17 @@ public class App {
         ListaPokemon listaCapturados = new ListaPokemon();
 
         System.out.println("Bienvenido a la usuario");
-
-        System.out.println("Seleccione una opcion:" + "\n" +
-                "a " + "Añadir un pokemon avistado "
-                + "Se solicitará al usuario el nombre y tipo de un pokemon y se añadirá a lista de pokemon avistados."
-                + "\n" +
-                "b " + "Añadir avistamiento legendario "
-                + "Se solicitará al usuario el nombre, tipo y localizacion del pokemon legendario y se añadirá a lista de pokemon avistados"
-                + "\n" +
-                "c " + "Pasar a capturados "
-                + "Se solicitará al usuario el nombre del pokemon que previamente se haya avistado. Éste se buscará y eliminará de la lista de avistado y se añadirá a la lista de capturados tras solicitar al usuario y añadir la informacion adicional del pokemon: peso, altura y descripción"
-                + "\n" +
-                "d " + "Mostrar lista de avistados " + "Mostrará los elementos de la lista correspondiente" + "\n" +
-                "e " + "Mostrar lista de capturados " + "Mostrará los elementos de la lista correspondiente" + "\n" +
-                "Cerrar la pokedex " + "Se cierra el programa despidiéndose del usuario");
-
-        opcion = teclado.nextLine();
+        
 
         while (salir == false) {
+                System.out.println("a " + "Añadir un pokemon avistado + " + "se solicitará al usuario el nombre y tipo de un pokemon y se añadirá a lista de pokemon avistados.");
+                System.out.println("b " + "Añadir avistamiento legendario " + "se solicitará al usuario el nombre, tipo y localizacion del pokemon legendario y se añadirá a lista de pokemon avistados");
+                System.out.println("c" + " Pasar a capturados " + "se solicitará al usuario el nombre del pokemon que previamente se haya avistado. Éste se buscará y eliminará de la lista de avistado y se añadirá a la lista de capturados tras solicitar al usuario y añadir la informacion adicional del pokemon: peso, altura y descripción");
+                System.out.println("d" + " Mostrar lista de avistados" + " mostrará los elementos de la lista correspondiente");
+                System.out.println("e " + "Mostrar lista de capturados " + "mostrará los elementos de la lista correspondiente");
+                System.out.println("f " + "Cerrar la pokedex " + "se cierra el programa despidiéndose del usuario");
+
+                opcion = teclado.nextLine();
             switch (opcion) {
                 case "a":
                     System.out.println("Ingrese el nombre y tipo de pokemon del pokemon");
@@ -50,7 +43,7 @@ public class App {
                     Pokemon pokemon = new Pokemon(nombre, tipo);
                     listaAvistados.addPokemonLista(pokemon);
 
-                    System.out.println("Se ha completado la accion");
+                    System.out.println("Se ha completado la accion" + '\n');
                     break;
                 case "b":
                     System.out.println("Ingrese el nombre, el tipo y la localizacion del pokemon legendario");
@@ -66,7 +59,7 @@ public class App {
 
                     listaAvistados.addPokemonLista(pokemonLegendario);
 
-                    System.out.println("Se ha completado la accion");
+                    System.out.println("Se ha completado la accion" + '\n');
                     break;
                 case "c":
                     System.out.println("Necesito la posicion del pokemon");
