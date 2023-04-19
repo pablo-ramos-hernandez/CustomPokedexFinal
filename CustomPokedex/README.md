@@ -1,18 +1,4 @@
-## Getting Started
+## Bienvenidos les presento la Pokedex
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## La Pokedex es capaz de guardar tus pokemon que hayas visto y capturados con su estupendo menu
+    El trabajo se organiza en 3 paquetes principales hijo, padre y otros. Más adelante explico que hace cada clase.
